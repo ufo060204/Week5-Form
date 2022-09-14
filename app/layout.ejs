@@ -6,53 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <div class="d-flex">
+      <nav class="nav d-flex flex-column justify-content-between bg-light vh-100">
+        <div>
+          <div class="my-6 ms-7">
+            <a href="index.html">
+              <img src="./assets/images/logo-ANSWER.svg" alt="ANSWER">
+            </a>
+          </div>
+          <ul class="nav flex-column ms-7 p-0">
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-icons me-3">
+                assessment
+                </span>Active</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-icons me-3">
+                question_answer
+                </span>Question</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="index.html"><span class="material-icons me-3">
+                assignment
+                </span>Assignment</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-icons me-3">
+                  video_library
+                  </span>Course</a>
+            </li>
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-icons me-3">
+                  supervisor_account
+                  </span>Admin</a>
+            </li>
+            <li class="nav-item p-0 mt-4 fw-bold">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-icons me-3">
+                  settings
+                  </span>Settings</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
-      </div>
-    </nav>
+        <div class="d-flex align-items-center ms-7 mb-7">
+          <div class="me-3">
+            <img class="profile-picture rounded-circle" src="./assets/images/andychen.jpeg" alt="andychen">
+          </div>
+          <div>
+            <h6 class="mb-0 text-gray-dark">Andy Chen</h6>
+            <p class="mb-0 text-gray">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
 
-    <%- contents %>
+      <%- contents %>
+    
+    </div>
 
-    <footer class="footer">
+    
+    <!-- <footer class="footer">
       footer
-    </footer>
+    </footer> -->
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
